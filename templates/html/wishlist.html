@@ -1,0 +1,16 @@
+<div id="itemsec">
+	 <div ng-repeat="wislistitem in wishlist" class="row wishlist-division">
+	 	<a href="" ng-click="gotoPhone(wislistitem._id)">
+		  <div class="col-md-8 col-md-push-4">
+		  <h1 class="wishlist-name">{{wislistitem.name}}</h1>
+		  <h2 style="color: #fff;">Description :</h2>
+		  <h5 class="wishlist-Description">{{wislistitem.Desc}}</h5>
+		  </div>
+		</a>
+		  <div class="wishlistDeleteIcon">
+	        <i ng-click="DeleteFromishlist($index)" class="btn btn-4 glyphicon glyphicon-remove"></i>
+	      </div>
+		  <div class="col-md-4 col-md-pull-7"><img style ="width: 45%; margin-top: -30px;" src="{{wislistitem.image}}"></div>
+	 	
+	 </div>
+</div>

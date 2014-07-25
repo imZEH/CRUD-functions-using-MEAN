@@ -1,0 +1,20 @@
+{
+  "name": "myApp",
+  "version": "0.0.0",
+  "description": "simpleCrud",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R list"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "~1.0.1",
+    "bower": "^1.3.7",
+    "express": "~4.0.0",
+    "mocha": "^1.20.1",
+    "mongoose": "~3.6.13",
+    "request": "^2.37.0",
+    "should": "^4.0.4"
+  }
+}

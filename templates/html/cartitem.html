@@ -1,0 +1,20 @@
+<div id="itemsec">
+    <div ng-repeat="cartitem in cart">
+        <div class="col-md-4 box-container">
+            <a href="" ng-click="gotoPhone(cartitem._id)">
+                <div class="phoneitems row">
+                    <div class="col-md-5">
+                        <img class="product-img" ng-src="{{cartitem.image}}">
+                    </div>
+                    <div style="padding-top: 50px;" class="col-md-5">
+                        <p class="phonename">{{cartitem.name}}</p>
+                        <p class="phoneprice">$ {{cartitem.price}}</p>
+                    </div>
+            </a>
+            <div class="cartDeleteIcon">
+            <i ng-click="DeleteFromCart($index)" class="btn btn-4 glyphicon glyphicon-remove"></i>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>

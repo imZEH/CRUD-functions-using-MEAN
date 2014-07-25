@@ -1,0 +1,153 @@
+body{
+	background-image: url("../img/spectrum1.png")!important;
+	background-color: #FF950F;
+	background-size: 100%;
+    background-repeat: no-repeat;
+}
+#imagehome{
+	height: 100%;
+	background: #FF950F;
+	background-image: url("../img/spectrum1.png")!important;
+	background-size: 100% !important;
+}
+.slideimage{
+	padding-top: 5%;
+	margin-left: 10%;
+	width:20%; 
+	height:auto;
+}
+.textinfo{
+	margin-bottom: 150px;
+	font-family: arial;
+	font-size: 70px;
+	width:100%;
+}
+.product-img{
+	width: 100%;
+	height: auto;
+}
+#itemsec{
+	padding: 5%;
+	background: #FF950F;
+}
+.phoneitems{
+	border: 1px solid rgba(235, 116, 49, 0.38);
+	/*margin-bottom: -1px;*/
+	padding: 21px;
+	/*margin-left: -16px;*/
+	-webkit-transition: all .3s ease-in-out;
+	background: #fff;
+}
+.phoneitems:hover{
+	background: #FF950F;
+	border: 1px solid #000;
+	color:#fff !important;
+}
+.phonename{
+	font-family: cursive;
+	font-size: 20px;
+	font-weight: 700;
+}
+.phoneprice{
+	font-family: monospace;
+	font-size: 25px;
+}
+.desc{
+	font-family: cursive;
+	font-size: 20px;
+}
+.box-container:hover a {color:#fff;}
+.btn.btn-4 {border-radius:0; border-color:#fff; background:none; -webkit-transition: all .3s ease-in-out;}
+.btn.btn-4:hover {color: #000; border-color:#fbfbfb; background:#fbfbfb;}
+.btn.btn-4:active {color: #F7F7F7; border-color:#fbfbfb; background:#fbfbfb;}
+.item-image{
+	width: 91%;
+}
+.image{
+	border: 1px solid rgba(255, 255, 255, 0.35);
+	padding: 33px;
+}
+.info{
+	border: 1px solid rgba(255, 255, 255, 0.35);
+	height: 507px;
+	margin-left: -1;
+}
+.item-name{
+	color: #fff;
+	font-family: cursive;
+	font-size: 70px;
+}
+.item-price{
+	font-family: serif;
+	font-size: 50px;
+	color: #fff;
+}
+.item-desc{
+	font-size: 20px;
+	width: 800px;
+	font-family: monospace;
+}
+.relateditems {
+	width: 95%;
+	margin: 0 auto;
+}
+.item-grid-container-related {
+	/*border: 1px solid #CCC;*/
+	display: inline-block;
+	margin: 10px;
+	width: 225px;
+	height: 180px;
+	background: #fff;
+	box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
+	-webkit-transition: all .2s ease-in-out; 
+	z-index:-1 ;
+}
+.item-grid-image {
+	width:190px;
+	height:auto;
+	margin: 30px 70px 30px 80px;
+}
+.top-border {
+	border-top:1px solid #000000;
+	color: #fff;
+	height: 40px;
+	padding: 10;
+}
+.related-items{
+	font-family: cursive;
+    font-size: 50px;
+    color: #fff;
+    width: 400px;
+    margin-left: 40px;
+}
+.icons-action{
+	float: right;
+	margin: -19;
+}
+.wishlist-division{
+	margin: 50px;
+	padding: 20px;
+	-webkit-transition: all .2s ease-in-out;
+	box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
+	background: rgba(17, 13, 13, 0.86);
+}
+.wishlist-division:hover{
+	 -webkit-transform: scale(1.2);
+	 -moz-transform: scale(1.2);
+	 -ms-transform: scale(1.2);
+	 -o-transform: scale(1.2);
+	transform: scale(1.2); 
+}
+
+.wishlist-name{
+	color: #F0A218;
+}
+.wishlist-Description{
+	color: rgba(255, 255, 255, 0.94);
+	font-family: monospace;
+	font-size: 18px;
+}
+.wishlistDeleteIcon{
+	float: right;
+	color: #fff;
+}

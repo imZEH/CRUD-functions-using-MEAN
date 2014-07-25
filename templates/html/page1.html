@@ -1,0 +1,64 @@
+<div id="itemsec">
+          <div ng-repeat="items in item | filter : search">
+            <div class="col-md-4 box-container">
+                <div class="phoneitems row">
+                <a href="" ng-click="gotoPhone(items._id)" class="thumb">
+                    <div class="col-md-5">
+                        <img class="product-img" ng-src="{{items.image}}">
+                    </div>
+                    <div class="col-md-5">
+                        <p class="phonename">{{items.name}}</p>
+                        <p class="phoneprice">$ {{items.price}}</p>
+                    </div>
+                </a>
+                    <div class="icons-action">
+                      <a href=""><i ng-click="deletephoneitem(items._id,$index)" class="btn btn-4 glyphicon glyphicon-remove"></i></a>
+                      <a href="" data-toggle="modal" data-target=".bs-example-modal-lg"><i ng-click="editphone(items,$index)" class="btn btn-4 glyphicon glyphicon-pencil"></i></a>
+                    </div>
+                </div>
+            </div>
+          </div>
+</div>
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Phone Modal</h4>
+            </div>
+                <div class="modal-body">
+                    <form role="form" name="phone">
+                            
+                            <div class="form-group">
+                                <label for="phonename">Phone Name</label>
+                                <input ng-model="phone.name" type="text" class="form-control" id="phonename" placeholder="Enter Phone Name" required>
+                            </div>
+                             <div class="form-group">
+                                <label for="price">Price</label>
+                                <input ng-model="phone.price" type="text" class="form-control" id="price" placeholder="0.00"  required>  
+                            </div>
+                            <div class="form-group">
+                                <label for="phonename">Age</label>
+                                <input ng-model="phone.age" type="text" class="form-control" id="phoneage" placeholder="Enter Age" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phonename">Brand</label>
+                                <input ng-model="phone.Brand" type="text" class="form-control" id="phonebrand" placeholder="Enter Brand" required>
+                            </div>      
+                            <div class="form-group">
+                                <label for="description">Desciption</label>
+                                <textarea ng-model="phone.Desc" class="form-control" rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="imageurl">Image Url</label>
+                                <input ng-model="phone.image" type="text" class="form-control" id="imageurl" placeholder="IMAGE.JPG"> 
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                <button ng-disabled="phone.$error.required" ng-click="addphone();clear()" type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                            </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
