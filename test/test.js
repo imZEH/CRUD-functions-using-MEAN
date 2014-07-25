@@ -31,57 +31,54 @@ describe('NODEJS Testing', function(){
 		});
 	});
 
-	// describe('GET',function(){
-	// 	it('the data from the API', function (done){
-	// 		request(URL, function (error, res, body){
-	// 			body = JSON.parse(body);
-	// 			should.not.exist(error);
-	// 			res.statusCode.should.equal(200);
-	// 			body.should.be.instanceOf(Array);
-	// 			body.length.should.be.above(0);
-	// 			done();
-	// 		});
-	// 	});
-	// });
-	// describe('GET',function(){
-	// 	it('one data from the API', function (done){
-	// 		request(URL + '/' + Pid, function (error, res, body){
-	// 			body = JSON.parse(body);
-	// 			should.not.exist(error);
-	// 			res.statusCode.should.equal(200);
-	// 			body.should.be.instanceOf(Object);
-	// 			done();
-	// 		});
-	// 	});
-	// });
+	describe('GET',function(){
+		it('the data from the API', function (done){
+			request(URL, function (error, res, body){
+				body = JSON.parse(body);
+				should.not.exist(error);
+				res.statusCode.should.equal(200);
+				body.should.be.instanceOf(Array);
+				body.length.should.be.above(0);
+				done();
+			});
+		});
+	});
+	describe('GET',function(){
+		it('one data from the API', function (done){
+			request(URL + '/' + Pid, function (error, res, body){
+				body = JSON.parse(body);
+				should.not.exist(error);
+				res.statusCode.should.equal(200);
+				body.should.be.instanceOf(Object);
+				done();
+			});
+		});
+	});
 
-	// describe('PUT', function(){
-	// 	it('data from db', function (done){
-	// 		var phones = { name: 'wwww', Age: 161, Brand: 'w' , Desc: 'sample'};
-	// 		var options = { url : URL + '/' + Pid, method: 'PUT', form: phones};
-	// 		request(options, function (error, response, body){
-	// 			body = JSON.parse(body);
-	// 			should.not.exist(error);
-	// 			response.statusCode.should.equal(200);
-	// 			body.message.should.containEql('Data updated!');
-	// 			done();
-	// 		});
-	// 	});
-	// });
+	describe('PUT', function(){
+		it('data from db', function (done){
+			var phones = { name: 'wwww', Age: 161, Brand: 'w' , Desc: 'sample'};
+			var options = { url : URL + '/' + Pid, method: 'PUT', form: phones};
+			request(options, function (error, response, body){
+				body = JSON.parse(body);
+				should.not.exist(error);
+				response.statusCode.should.equal(200);
+				body.message.should.containEql('Data updated!');
+				done();
+			});
+		});
+	});
 	
-	// describe('DELETE', function(){
-	// 	it('data from db', function (done){
-	// 		var options = { url: URL + '/' + Pid, method: 'DELETE'};
-	// 		request(options, function (error, res, body){
-	// 			body = JSON.parse(body);
-	// 			should.not.exist(error);
-	// 			res.statusCode.should.equal(200);
-	// 			body.should.be.containEql({message: 'Succesfully Deleted'});
-	// 			done();
-	// 		});
-	// 	});
-	// });
-
-
-	
+	describe('DELETE', function(){
+		it('data from db', function (done){
+			var options = { url: URL + '/' + Pid, method: 'DELETE'};
+			request(options, function (error, res, body){
+				body = JSON.parse(body);
+				should.not.exist(error);
+				res.statusCode.should.equal(200);
+				body.should.be.containEql({message: 'Succesfully Deleted'});
+				done();
+			});
+		});
+	});
 });
